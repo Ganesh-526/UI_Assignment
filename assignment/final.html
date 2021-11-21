@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css">
+      <link rel="stylesheet" type="text/css" href="final.css">
+      <title>Document</title>
+   </head>
+   <body>
+      <header class="slds-global-header_container headerbar">
+         <div class="slds-global-header slds-grid slds-grid_align-spread" >
+            <div class="slds-global-header__item">
+               <div class="slds-global-header__logo"  >
+                  <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                  <img alt="Person name" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/salesforce_logo_icon_170764.png" />
+                  </span>
+               </div>
+            </div>
+            <div class="slds-global-header__item">
+               <ul class="slds-global-actions">
+                  <li class="slds-global-actions__item">
+                     <div class="slds-global-actions__favorites slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-p-right_x-small" style="color:black;border:2px solid white; ">Dashboard</button>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.5 16.875C12.5 18.2563 11.3813 19.375 10 19.375C8.61875 19.375 7.5 18.2563 7.5 16.875" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M0.625 14.375H19.375" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M18.125 14.375H18.75C17.3687 14.375 15.625 13.2563 15.625 11.875V6.25C15.625 3.14375 13.1063 0.625 10 0.625V0.625C6.89375 0.625 4.375 3.14375 4.375 6.25V11.875C4.375 13.2563 3.25625 14.375 1.875 14.375" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                              <circle cx="16" cy="4" r="4" fill="#00A0FF"/>
+                           </svg>
+                           <span class="slds-assistive-text">no new notifications</span>
+                        </button>
+                        <span aria-hidden="true" class="slds-notification-badge">0</span>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-global-actions__avatar slds-global-actions__item-action" title="person name" aria-haspopup="true">
+                        <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                        <img alt="Person name" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" title="User avatar" />
+                        </span>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="slds-global-actions__item slds-p-left_medium">
+                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <strong>Ganesh Chirram</strong>
+                     </div>
+                  </li>
+                  <li>
+                     <div>
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0.0243835 0L5.18699 6L10.3496 0H0.0243835Z" fill="#303030"/>
+                        </svg>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="slds-grid slds-wrap" style="padding-top
+         :56px;" >
+         <div class="slds-col slds-size_2-of-12 Sidebar">
+            <div class="demo-only" style="width:240px">
+               <nav class="slds-nav-vertical" aria-label="Sub page">
+                  <div class="slds-nav-vertical__section">
+                     <h6 id="entity-header" class=" slds-nav-vertical__action"><a>SUMMARY</a></h6>
+                     <ul aria-describedby="summary">
+                        <li class="slds-nav-vertical__item ">
+                           <a href="#" class="slds-nav-vertical__action" aria-current="true"><strong>Account Summary</strong></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                     <h6 id="entity-header" class=" slds-nav-vertical__action"><a>INVESTMENTS</a></h6>
+                     <ul aria-describedby="Investments">
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>My Investments</strong></a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>Investor List</strong></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                     <h6 id="entity-header" class=" slds-nav-vertical__action"><a>DOCUMENTS</a></h6>
+                     <ul aria-describedby="Investments">
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>My Document</strong></a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>Delegate Document</strong></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                     <h6 id="entity-header" class=" slds-nav-vertical__action"><a>TRANSACTIONS</a></h6>
+                     <ul aria-describedby="Investments">
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>My Transactions</strong></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="slds-nav-vertical__section">
+                     <h6 id="entity-header" class=" slds-nav-vertical__action"><a>DELEGATE</a></h6>
+                     <ul aria-describedby="Investments">
+                        <li class="slds-nav-vertical__item">
+                           <a href="#" class="slds-nav-vertical__action"><strong>My Delegate</strong></a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="slds-col slds-size_10-of-12 " style="background-color:rgb(245, 241, 241);">
+            <div class="slds-grid slds-wrap slds-p-bottom_large miniheader" style="background-color:white;">
+               <div class="slds-col slds-size_3-of-12 slds-p-top_x-large slds-p-left_xx-large" style="font-size: 20px;">
+                  Investor List
+               </div>
+               <div class="slds-col slds-size_4-of-12 slds-p-top_x-large " style="display:flex;">
+                  <input type="text" placeholder="Search By Name or Email.." name="search" style="width:300px; height:27px; border-style: inherit;">
+                  <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action "  aria-live="assertive" aria-atomic="true" >
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2727 15.2727L10.6589 10.6589" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="6.54545" cy="6.54545" r="5.81818" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                  </button>
+               </div>
+               <div class="slds-col slds-size_3-of-12 slds-p-top_x-large " style="display:flex;">
+                  <div >
+                     <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action "  aria-live="assertive" aria-atomic="true" style="width:70px;">
+                        <p class="slds-p-right_x-small">Both</p>
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0.0243835 0L5.18699 6L10.3496 0H0.0243835Z" fill="#303030"/>
+                        </svg>
+                     </button>
+                  </div>
+                  <div class="slds-p-left_xx-large">
+                     <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action"  aria-live="assertive" aria-atomic="true" style="width:70px;">
+                        <p class="slds-p-right_x-small">All</p>
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0.0243835 0L5.18699 6L10.3496 0H0.0243835Z" fill="#303030"/>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+               <div class="slds-col slds-size_2-of-12 slds-p-top_x-large" style="display: flex;">
+                  <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action"  aria-live="assertive" aria-atomic="true" >
+                     <a onclick="myFunc1()">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                           <rect x="0.5" y="0.5" width="6" height="6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                           <rect x="9.5" y="0.5" width="6" height="6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                           <rect x="0.5" y="9.5" width="6" height="6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                           <rect x="9.5" y="9.5" width="6" height="6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </a>
+                  </button>
+                  <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action"  aria-live="assertive" aria-atomic="true" >
+                     <a onclick="myFunc2()">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect x="0.5" y="0.5" width="15" height="2" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                           <rect x="0.5" y="5.5" width="15" height="2" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                           <rect x="0.5" y="10.5" width="15" height="2" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </a>
+                  </button>
+                  <div class="slds-p-left_xx-large">
+                     <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action "  aria-live="assertive" aria-atomic="true" >
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5.11115 6.22221L9.00003 10.6667L12.8889 6.22221H10.6667V0.666656H7.33337V6.22221H5.11115Z" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M14 0.666656H16.2222C16.8356 0.666656 17.3334 1.16443 17.3334 1.77777V16.2222C17.3334 16.8355 16.8356 17.3333 16.2222 17.3333H1.7778C1.16446 17.3333 0.666687 16.8355 0.666687 16.2222V1.77777C0.666687 1.16443 1.16446 0.666656 1.7778 0.666656H4.00002" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M0.666687 14H17.3334" stroke="#303030" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div id="displaygrid">
+               <div class="slds-grid slds-wrap cardmaster " >
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1525181737312-adca155347de?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM2MzY4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Uesugi Suzuki</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1586796676774-c93004ae009f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM2ODM1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Ivan Magalhàes</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM3NzM4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Sofia Leite</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM3ODg1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Kabhir Marpha</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1627161684850-52a7d958f8d7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MjIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Jhon Bergé</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MTU2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Marith Rita</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1619263895574-0df91475d818?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MTA0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Alexa Leena</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NTcz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Sukhir dheer </strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NTI2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Subrut Malingh</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NDEz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Mexina Nitha</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MzY5&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Peter Berge</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+                  <article class="slds-card top ">
+                     <div class="slds-card__header ">
+                        <div class="slds-no-flex">
+                           <span class="material-icons-outlined">
+                           <img class="dot" alt="Person name" src="https://icon-library.com/images/android-three-dots-icon/android-three-dots-icon-3.jpg" />
+                           </span>
+                        </div>
+                     </div>
+                     <div><a href="#">
+                        <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle image" >
+                        <img class="" alt="Person name" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MzI2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                        </span>
+                        </a>
+                     </div>
+                     <center>
+                     <div class="slds-text-heading_large slds-p-top_small text-size">
+                        <strong>Kumar Abhishek</strong>
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text text-size">
+                        abcdef@xyz.com
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_small text text-size">
+                        Total Contributions
+                     </div>
+                     <center>
+                     <center>
+                     <div class="slds-p-top_xx-small text-size">
+                        <b>$ 821,243</b>
+                     </div>
+                     <center>
+                     <footer class="slds-card__footer">
+                        <div class="e">
+                           <a class="slds-card__footer-action  text-size" href="#">View Details
+                           </a>
+                        </div>
+                     </footer>
+                  </article>
+               </div>
+            </div>
+            <div class="slds-grid slds-wrap " id="displaytable" style="display:none;">
+               <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols  slds-p-right_x-large slds-p-left_x-large slds-p-bottom_x-large" role="grid" aria-label="Example advanced table as radio group" >
+                  <thead >
+                     <tr class="slds-line-height_reset">
+                        <th class="slds-text-align_right" scope="col" style="width:3.25rem">
+                           <div class="slds-truncate slds-assistive-text" id="column-group-header" title="Choose a row to select">Choose a row to select</div>
+                        </th>
+                        <th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width: 30%;">
+                           <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+                              <span class="slds-assistive-text">Sort by: </span>
+                              <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                 <span class="slds-truncate" title="Name">Name</span>
+                                 <span class="slds-icon_container slds-icon-utility-arrowdown">
+                                    <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                                       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </a>
+                        </th>
+                        <th aria-label="Account Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
+                           <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+                              <span class="slds-assistive-text">Sort by: </span>
+                              <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                 <span class="slds-truncate" title="Account Name">Total Contributions</span>
+                                 <span class="slds-icon_container slds-icon-utility-arrowdown">
+                                    <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                                       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </a>
+                        </th>
+                        <th aria-label="Close Date" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
+                           <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+                              <span class="slds-assistive-text">Sort by: </span>
+                              <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                 <span class="slds-truncate" title="Close Date">Total Distribution</span>
+                                 <span class="slds-icon_container slds-icon-utility-arrowdown">
+                                    <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                                       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </a>
+                        </th>
+                        <th aria-label="Stage" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
+                           <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+                              <span class="slds-assistive-text">Sort by: </span>
+                              <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                 <span class="slds-truncate" title="Stage">Total Balance</span>
+                                 <span class="slds-icon_container slds-icon-utility-arrowdown">
+                                    <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                                       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </a>
+                        </th>
+                        <th aria-label="Confidence" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
+                           <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+                              <span class="slds-assistive-text">Sort by: </span>
+                              <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                                 <span class="slds-truncate" title="Confidence">Detail</span>
+                                 <span class="slds-icon_container slds-icon-utility-arrowdown">
+                                    <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                                       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </a>
+                        </th>
+                        <th class="" scope="col" style="width:3.25rem">
+                           <div class="slds-truncate slds-assistive-text" title="Actions">Actions</div>
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody >
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1623083593166-c9fe77371021?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MTI0NjYx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Sonia misefly
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1525181737312-adca155347de?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM2MzY4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Uesugi Suzuki
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1586796676774-c93004ae009f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM2ODM1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Ivan Magalhàes
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM3NzM4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Sofia Leite
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM3ODg1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Kabhir Marpha
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1627161684850-52a7d958f8d7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MjIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Jhon Bergé
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MTU2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Marith Rita
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1619263895574-0df91475d818?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MTA0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Alexa Leena
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NTcz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Sukhir dheer
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NTI2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Subrut Malingh
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name"src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4NDEz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Mexina Nitha
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                           <div class="style-image">
+                              <div><a href="#">
+                                 <span class="slds-avatar slds-avatar_large  slds-avatar slds-avatar_circle "style="width:40px;height:40px;" >
+                                 <img class="" alt="Person name" src="https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8aGVhZHNob3R8fHx8fHwxNjM3MzM4MzY5&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" title="User avatar" />
+                                 </span>
+                                 </a>
+                              </div>
+                           </div>
+                           </span>
+                        </td>
+                        <th scope="row" tabindex="0">
+                           <div class="slds-truncate" title="Acme - 1,200 Widgets">
+                              Peter Berge
+                           </div>
+                        </th>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Acme">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="4/10/15">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <div class="slds-truncate" title="Value Proposition">$821,243</div>
+                        </td>
+                        <td role="gridcell">
+                           <a href="#">
+                              <div class="slds-truncate">
+                                 <button class="slds-button slds-p-right_x-small" style="color:rgb(35, 127, 180);border:2px solid white; ">
+                                 <img class="slds-p-right_xx-small" style="width:15px;height:15px;"src="https://www.seekpng.com/png/full/130-1307092_right-arrow-blue-png-arrow-icon.png"/>
+                           <a>View</a>
+                           </button>
+                           </div>
+                           </a>
+                        </td>
+                        <td role="gridcell">
+                           <button class="slds-button slds-button_icon  slds-button_icon-large" aria-haspopup="true" tabindex="-1" >
+                           <img src="menu.png"/>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="slds-hint-parent">
+                        <td class="slds-text-align_right" role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                        <td role="gridcell">
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script>
+      function myFunc1(){
+      
+         var x = document.getElementById("displaygrid");
+         var y=document.getElementById("displaytable");
+         y.style.display="none";
+         x.style.display="block";
+       }
+      
+      function myFunc2(){
+      var x = document.getElementById("displaygrid");
+      var y=document.getElementById("displaytable");
+      x.style.display="none";
+      y.style.display="block";
+      
+      
+      }
+      
+   </script>
+</html>
